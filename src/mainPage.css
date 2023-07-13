@@ -1,0 +1,75 @@
+.mainPage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: rgb(226, 179, 179)
+}
+.form-container{
+    min-width: 30%;
+    max-width:40% ;
+}
+.form-container ,.login ,.register{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+}
+.mainPage h3 span{
+    color:rgb(242, 63, 135);
+    border-width: 0;
+    border-bottom-width: 7px;
+    border-style: groove;
+    margin-bottom: 10px;
+    font-weight: 900;
+    border-color:#ffffff;
+}
+.mainPage input{
+    margin-bottom: 10px;
+   border-width: 2px;
+   border-color: rgb(226, 179, 179) ;
+}
+.mainPage input:hover{
+    padding-bottom: 5px;
+    border-radius: 5px;
+   border-width: 7px;
+   border-color: rgb(242, 63, 135) ;
+}
+.mainPage input:focus{
+    padding-bottom: 5px;
+    border-radius: 5px;
+   border-width: 7px;
+   border-color: rgb(242, 63, 135) ;
+   
+}
+.mainPage button{
+    background-color: rgb(242, 63, 135) ;
+    color: #ffffff ;
+    font-style: bold;
+    text-align: center;
+   
+}
+.mainPage .lbtn:hover{
+    border-radius: 10%;
+    text-align: center;
+    border-width:5px ;
+    border-color: rgb(242, 63, 135);
+    background-color: #ffffff;
+    color: rgb(242, 63, 135);
+    
+}
+.mainPage  .lbtn{
+   width:70px;
+   height: 30px;
+   border-width:0;
+   
+}
+.mainPage  .chbtn{
+    border-width:0;
+    background-color: rgb(226, 179, 179);
+    color: rgb(242, 63, 135);}
+    .mainPage  .chbtn:hover{
+        border-width:0;
+        background-color: rgb(226, 179, 179);
+        color: #ffffff;}

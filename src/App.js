@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './mainPage.css';
+import {Registeration} from './Registeration';
+import {Login} from './login';
+import React,{useState} from 'react';
 
 function App() {
+   const [formHere,setformHere]=useState('loggedIn');
+
+   const toggleForm=(formChange)=>{
+    setformHere(formChange);
+   }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mainPage'>
+   {formHere==='loggedIn' ?<Login onFormSwitch={toggleForm} />:<Registeration onFormSwitch={toggleForm} />}
     </div>
   );
+
 }
 
 export default App;
